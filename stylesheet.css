@@ -1,9 +1,45 @@
 body {
   color: #1027a5;
   background-color: #fff6f3;
+  font-family: "roboto", "helvetica", sans-serif;
 }
 
 h1,
 h2 {
   font-family: "MuseoModerno", "Helvetica";
+}
+h1 {
+  font-size: 9em;
+}
+
+p {
+  font-weight: 60;
+  font-size: 2em;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 100px;
+}
+
+.hero {
+  /*
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  width: 1300px;*/
+}
+
+.blob_exh_01 {
+  background-color: pink;
 }
