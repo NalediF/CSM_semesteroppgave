@@ -1,4 +1,9 @@
 body {
-  color: pink;
-  font-size: 1000px;
+  color: #1027a5;
+  background-color: #fff6f3;
+}
+
+h1,
+h2 {
+  font-family: "MuseoModerno", "Helvetica";
 }
