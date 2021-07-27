@@ -2,19 +2,31 @@ body {
   color: #1027a5;
   background-color: #fff6f3;
   font-family: "roboto", "helvetica", sans-serif;
+  max-width: 100%;
+  overflow-x: hidden; /*fjerner muligheten for horisontale scroll bars*/
 }
+/*general*/
 
 h1,
 h2 {
   font-family: "MuseoModerno", "Helvetica";
 }
 h1 {
-  font-size: 9em;
+  font-size: 8em;
 }
 
 p {
   font-weight: 60;
-  font-size: 2em;
+  font-size: 1.2em;
+}
+
+a {
+  text-decoration: none;
+  color: palevioletred;
+}
+
+a:link {
+  color: yellow;
 }
 
 header {
@@ -22,9 +34,19 @@ header {
   justify-content: space-between;
 }
 
+nav li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
 nav {
+  margin: 0px 20px;
+}
+
+footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
@@ -32,14 +54,34 @@ nav {
 }
 
 .hero {
-  /*
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  z-index: -1;
-  width: 1300px;*/
+  display: flex;
+  justify-content: row;
+}
+
+.hero_img {
+  width: 700px;
+  background-color: plum;
 }
 
 .blob_exh_01 {
   background-color: pink;
+  width: 300px;
+}
+
+.image {
+  height: 250px;
+  background-color: peru;
+}
+
+.welcome_content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 100px;
+  margin: 0 100px;
+}
+
+.visit_content {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
 }
