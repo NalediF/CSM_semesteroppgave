@@ -1,6 +1,6 @@
 body {
   color: #1027a5;
-  background-color: #fff6f3;
+  background-color: #f8f0ee;
   font-family: "roboto", "helvetica", sans-serif;
   max-width: 100%;
   overflow-x: hidden; /*fjerner muligheten for horisontale scroll bars*/
@@ -12,17 +12,23 @@ h2 {
   font-family: "MuseoModerno", "Helvetica";
 }
 h1 {
-  font-size: 8em;
+  font-size: 15em;
+  display: flex;
+  display: flex;
+
+  margin: 0;
+  padding: 0px;
 }
 
 p {
+  display: flex;
   font-weight: 60;
-  font-size: 1.2em;
+  font-size: 20px;
 }
 
 a {
   text-decoration: none;
-  color: palevioletred;
+  color: rgb(117, 15, 49);
 }
 
 a:link {
@@ -32,6 +38,7 @@ a:link {
 header {
   display: flex;
   justify-content: space-between;
+  margin: 30px 0 0;
 }
 
 nav li {
@@ -45,22 +52,27 @@ nav {
 
 footer {
   display: flex;
-  justify-content: space-between;
+  margin: 100px 0;
+  justify-content: center;
+}
+
+.short-cuts {
+  display: flex;
+  justify-content: space-around;
   align-items: center;
+  background-color: rgb(219, 212, 226);
+  margin: 0px 0;
+  padding: 0px;
+  list-style: none;
 }
 
 .logo {
-  width: 100px;
+  width: 50px;
 }
 
 .hero {
   display: flex;
-  justify-content: row;
-}
-
-.hero_img {
-  width: 700px;
-  background-color: plum;
+  flex-direction: column;
 }
 
 .blob_exh_01 {
@@ -68,20 +80,153 @@ footer {
   width: 300px;
 }
 
-.image {
-  height: 250px;
-  background-color: peru;
+.hero {
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  height: 475px;
 }
 
+.welcome_copy {
+  width: 900px;
+  margin: -50px 0 100px;
+  padding: 0px;
+  text-align: center;
+}
+
+.image {
+  height: 250px;
+}
+
+/*
 .welcome_content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 100px;
   margin: 0 100px;
+}/*
+
+
+
+/*W3SCHOOLS*/
+
+* {
+  box-sizing: border-box;
 }
 
-.visit_content {
+/* Container needed to position the overlay. Adjust the width as needed */
+.container_left,
+.container_right {
+  position: relative;
+  width: 100%;
+}
+
+/* Make the image to responsive */
+.image {
+  display: block;
+  width: 65%;
+  height: auto;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  display: flex;
+  justify-content: right;
+  padding: 100px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+  opacity: 1; /*gjør boksen usynlig før du hovrer over*/
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  align-items: flex-end;
+}
+
+.overlay_content {
+  color: #1027a5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*Venstre*/
+
+.container_left {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 0;
+}
+.container_right {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.overlay_left {
+  display: flex;
+  justify-content: left;
+  padding: 100px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+  opacity: 1; /*gjør boksen usynlig før du hovrer over*/
+  color: rgb(255, 255, 255);
+
+  align-items: flex-end;
+}
+
+.overlay_content {
+  color: #1027a5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.copy {
+  width: 285px;
+  font-size: 1em;
+  text-align: left;
+  margin: -20px;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container_left:hover .overlay {
+  opacity: 1;
+}
+
+.container_right:hover .overlay {
+  opacity: 1;
+}
+/*W3SCHOOLS*/
+
+/*VISIT US*/
+
+.opening {
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  background: chocolate;
+}
+
+.visit {
+  display: flex;
+  background: cadetblue;
+  justify-content: center;
+  width: 400px;
   width: 300px;
   display: flex;
   flex-direction: column;
+}
+
+.h2_visit {
+  background: cornflowerblue;
+  display: flex;
+}
+
+.visit_content {
+  background-color: crimson;
+  display: flex;
+  justify-content: center;
 }
